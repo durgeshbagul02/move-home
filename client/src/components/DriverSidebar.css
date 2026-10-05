@@ -1,0 +1,203 @@
+.driver-sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.driver-sidebar-brand {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 22px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.driver-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.driver-brand-text h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.driver-brand-text span {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.driver-sidebar-nav {
+    flex: 1;
+    padding: 24px 14px;
+}
+
+.driver-menu-title {
+    margin: 0 0 10px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #94a3b8;
+}
+
+.driver-nav-link {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0 14px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.driver-nav-link:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+.driver-nav-active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.driver-nav-icon {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.driver-sidebar-bottom {
+    padding: 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.driver-status-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.driver-status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #22c55e;
+    flex-shrink: 0;
+}
+
+.driver-status-card strong {
+    display: block;
+    font-size: 13px;
+    color: #334155;
+}
+
+.driver-status-card span {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.driver-logout-btn {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 9px;
+    background: #fef2f2;
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition: all 0.2s ease;
+}
+
+.driver-logout-btn:hover {
+    background: #fee2e2;
+}
+
+
+/* =========================
+   MOBILE OVERLAY
+========================= */
+
+.driver-sidebar-overlay {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .driver-sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+    }
+    .driver-sidebar-open {
+        transform: translateX(0);
+    }
+    .driver-sidebar-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.45);
+        z-index: 999;
+    }
+}
+
+@media (max-width: 500px) {
+    .driver-sidebar {
+        width: 240px;
+    }
+}

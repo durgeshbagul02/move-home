@@ -1,0 +1,947 @@
+.track-page {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+
+/* ============================= */
+
+
+/* MAIN AREA */
+
+
+/* ============================= */
+
+.track-main {
+    width: calc(100% - 280px);
+    min-height: 100vh;
+    margin-left: 280px;
+    padding: 0 34px 40px;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+
+
+/* TOPBAR */
+
+
+/* ============================= */
+
+.track-topbar {
+    min-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.track-breadcrumb {
+    margin: 0 0 5px;
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.track-topbar h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.track-topbar-subtitle {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.track-user-area {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.track-user-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.track-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.track-user-info strong {
+    color: #0f172a;
+    font-size: 13px;
+}
+
+.track-user-info span {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+
+/* ============================= */
+
+
+/* BOOKING HEADER */
+
+
+/* ============================= */
+
+.track-booking-header {
+    margin-top: 25px;
+    padding: 22px 24px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.track-booking-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.track-truck-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.track-small-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.track-booking-title h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.track-booking-title p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.track-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.track-status-badge.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.track-status-badge.delivered {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.track-status-badge.cancelled {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.track-status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+/* ============================= */
+
+
+/* CURRENT STATUS */
+
+
+/* ============================= */
+
+.track-current-status-card {
+    margin-top: 18px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr minmax(240px, 320px);
+    align-items: center;
+    gap: 20px;
+}
+
+.track-current-status-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 15px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.track-current-status-content {
+    min-width: 0;
+}
+
+.track-current-label {
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.track-current-status-content h2 {
+    margin: 4px 0 4px;
+    color: #0f172a;
+    font-size: 19px;
+}
+
+.track-current-status-content p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.track-progress-box {
+    padding: 15px;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.track-progress-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.track-progress-top span {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.track-progress-top strong {
+    color: #2563eb;
+    font-size: 12px;
+}
+
+.track-progress-bar {
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e2e8f0;
+}
+
+.track-progress-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: #2563eb;
+    transition: width 0.5s ease;
+}
+
+
+/* ============================= */
+
+
+/* ROUTE */
+
+
+/* ============================= */
+
+.track-route-card {
+    margin-top: 18px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+}
+
+.track-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.track-section-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.track-section-heading h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.track-live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background: #ecfdf5;
+    color: #059669;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.track-live-indicator span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10b981;
+}
+
+.track-route {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 18px;
+}
+
+.track-route-point {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-width: 0;
+}
+
+.track-route-icon {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    font-size: 20px;
+}
+
+.track-route-point.pickup .track-route-icon {
+    background: #eff6ff;
+}
+
+.track-route-point.destination .track-route-icon {
+    background: #ecfdf5;
+}
+
+.track-route-content {
+    min-width: 0;
+}
+
+.track-route-content span {
+    display: block;
+    margin-bottom: 5px;
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.track-route-content strong {
+    display: block;
+    overflow: hidden;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+}
+
+.track-route-line {
+    position: relative;
+    width: 130px;
+    height: 4px;
+    border-radius: 999px;
+    background: #e2e8f0;
+}
+
+.track-route-line-progress {
+    width: 45%;
+    height: 100%;
+    border-radius: inherit;
+    background: #2563eb;
+}
+
+
+/* ============================= */
+
+
+/* INFO GRID */
+
+
+/* ============================= */
+
+.track-info-grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.track-info-card {
+    min-width: 0;
+    padding: 17px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.track-info-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.track-info-card span {
+    display: block;
+    margin-bottom: 4px;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+.track-info-card strong {
+    display: block;
+    overflow: hidden;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* ============================= */
+
+
+/* TIMELINE */
+
+
+/* ============================= */
+
+.track-timeline-card {
+    margin-top: 18px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+}
+
+.track-timeline-note {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.track-timeline {
+    margin-top: 5px;
+}
+
+.track-timeline-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 15px;
+    min-height: 92px;
+}
+
+.track-timeline-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.track-timeline-icon {
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    color: #94a3b8;
+    font-size: 16px;
+    font-weight: 700;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px #e2e8f0;
+}
+
+.track-timeline-item.completed .track-timeline-icon {
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 0 0 1px #2563eb;
+}
+
+.track-timeline-item.current .track-timeline-icon {
+    background: #eff6ff;
+    color: #2563eb;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.track-timeline-item.cancelled .track-timeline-icon {
+    background: #fef2f2;
+    color: #dc2626;
+    box-shadow: 0 0 0 1px #dc2626;
+}
+
+.track-timeline-connector {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    width: 3px;
+    background: #e2e8f0;
+}
+
+.track-timeline-connector .filled {
+    width: 100%;
+    height: 100%;
+    background: #2563eb;
+}
+
+.track-timeline-content {
+    padding: 1px 0 26px;
+}
+
+.track-timeline-title-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+.track-timeline-content h3 {
+    margin: 0;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.track-timeline-content p {
+    margin: 5px 0 0;
+    color: #94a3b8;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.track-timeline-item.current .track-timeline-content h3 {
+    color: #2563eb;
+}
+
+.track-current-tag,
+.track-completed-tag {
+    padding: 4px 7px;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.track-current-tag {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.track-completed-tag {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.track-live-update {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border-radius: 7px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 10px;
+}
+
+.track-live-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2563eb;
+}
+
+
+/* ============================= */
+
+
+/* REAL-TIME CARD */
+
+
+/* ============================= */
+
+.track-realtime-card {
+    margin-top: 18px;
+    padding: 18px 20px;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    background: #f8fbff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.track-realtime-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.track-realtime-content {
+    flex: 1;
+}
+
+.track-realtime-content h3 {
+    margin: 0 0 4px;
+    color: #0f172a;
+    font-size: 13px;
+}
+
+.track-realtime-content p {
+    margin: 0;
+    color: #64748b;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.track-connection-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #059669;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.track-connection-status span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10b981;
+}
+
+
+/* ============================= */
+
+
+/* ACTIONS */
+
+
+/* ============================= */
+
+.track-actions {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.track-primary-button,
+.track-secondary-button {
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.track-primary-button {
+    border: 1px solid #2563eb;
+    background: #2563eb;
+    color: white;
+}
+
+.track-primary-button:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.track-secondary-button {
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #475569;
+}
+
+.track-secondary-button:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+
+/* ============================= */
+
+
+/* EMPTY STATE */
+
+
+/* ============================= */
+
+.track-empty-state {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.track-empty-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+    border-radius: 20px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.track-empty-state h2 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+.track-empty-state p {
+    max-width: 400px;
+    margin: 0 0 20px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+
+
+/* FOOTER */
+
+
+/* ============================= */
+
+.track-footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.track-footer p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+.track-footer div {
+    display: flex;
+    gap: 7px;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+
+/* ============================= */
+
+
+/* RESPONSIVE - 230px SIDEBAR */
+
+
+/* ============================= */
+
+@media (max-width: 1100px) {
+    .track-main {
+        width: calc(100% - 230px);
+        margin-left: 230px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .track-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .track-current-status-card {
+        grid-template-columns: auto 1fr;
+    }
+    .track-progress-box {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ============================= */
+
+
+/* TABLET */
+
+
+/* ============================= */
+
+@media (max-width: 800px) {
+    .track-main {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .track-booking-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .track-route {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .track-route-line {
+        width: 4px;
+        height: 35px;
+        margin-left: 21px;
+    }
+    .track-route-line-progress {
+        width: 100%;
+        height: 50%;
+    }
+    .track-realtime-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .track-connection-status {
+        width: 100%;
+        margin-left: 56px;
+    }
+}
+
+
+/* ============================= */
+
+
+/* MOBILE */
+
+
+/* ============================= */
+
+@media (max-width: 700px) {
+    .track-main {
+        width: calc(100% - 210px);
+        margin-left: 210px;
+        padding: 0 14px 30px;
+    }
+    .track-topbar {
+        min-height: 85px;
+    }
+    .track-topbar h1 {
+        font-size: 21px;
+    }
+    .track-topbar-subtitle,
+    .track-breadcrumb {
+        font-size: 10px;
+    }
+    .track-user-info {
+        display: none;
+    }
+    .track-user-avatar {
+        width: 37px;
+        height: 37px;
+    }
+    .track-booking-header,
+    .track-current-status-card,
+    .track-route-card,
+    .track-timeline-card {
+        padding: 18px;
+    }
+    .track-current-status-card {
+        grid-template-columns: 1fr;
+    }
+    .track-current-status-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .track-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .track-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .track-actions {
+        flex-direction: column;
+    }
+    .track-primary-button,
+    .track-secondary-button {
+        width: 100%;
+    }
+    .track-footer {
+        flex-direction: column;
+    }
+}

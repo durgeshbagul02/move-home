@@ -1,0 +1,668 @@
+/* =========================================================
+   MOVE-HOME REGISTER PAGE
+   ========================================================= */
+
+.register-page {
+    min-height: 100vh;
+    background: radial-gradient( circle at 10% 20%, rgba(37, 99, 235, 0.08), transparent 30%), #f6f8fc;
+    color: #172033;
+}
+
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.register-topbar {
+    height: 78px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e7ebf2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 42px;
+}
+
+.register-brand {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.register-brand-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.18);
+}
+
+.register-brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.register-brand-name {
+    color: #2563eb;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.register-brand-subtitle {
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.topbar-home-btn {
+    border: 1px solid #dce3ed;
+    background: #ffffff;
+    color: #475569;
+    padding: 10px 16px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.topbar-home-btn:hover {
+    color: #2563eb;
+    border-color: #bfdbfe;
+    background: #f8fbff;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.register-main {
+    padding: 58px 24px 70px;
+}
+
+.register-container {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 65px;
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT INTRO
+   ========================================================= */
+
+.register-intro {
+    padding: 20px 0;
+}
+
+.intro-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 13px;
+    border-radius: 999px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    color: #2563eb;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    margin-bottom: 21px;
+}
+
+.register-intro h1 {
+    margin: 0;
+    max-width: 500px;
+    color: #111827;
+    font-size: clamp(42px, 4.5vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    font-weight: 850;
+}
+
+.register-intro h1 span {
+    display: block;
+    color: #2563eb;
+}
+
+.intro-description {
+    max-width: 500px;
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 23px 0 30px;
+}
+
+
+/* =========================================================
+   ILLUSTRATION
+   ========================================================= */
+
+.relocation-illustration {
+    height: 190px;
+    position: relative;
+    margin: 10px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration-circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #eaf2ff;
+}
+
+.illustration-house,
+.illustration-truck,
+.illustration-destination {
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #dce6f2;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.illustration-house {
+    left: 12%;
+    top: 56px;
+}
+
+.illustration-truck {
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    width: 82px;
+    height: 82px;
+    background: #2563eb;
+    border-color: #2563eb;
+    font-size: 39px;
+}
+
+.illustration-destination {
+    right: 12%;
+    top: 56px;
+}
+
+.illustration-arrow {
+    position: absolute;
+    z-index: 3;
+    color: #2563eb;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.intro-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.benefit-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.benefit-item div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.benefit-item strong {
+    color: #334155;
+    font-size: 13px;
+}
+
+.benefit-item span {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   REGISTER CARD
+   ========================================================= */
+
+.register-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e1e7ef;
+    border-radius: 22px;
+    padding: 38px;
+    box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08), 0 3px 10px rgba(15, 23, 42, 0.03);
+}
+
+.register-card-header {
+    margin-bottom: 27px;
+}
+
+.form-label {
+    color: #2563eb;
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.register-card-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 29px;
+    letter-spacing: -0.7px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.register-card-header p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 8px 0 0;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 750;
+    margin-bottom: 7px;
+}
+
+.form-group label span {
+    color: #ef4444;
+    margin-left: 3px;
+}
+
+.input-wrapper {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8e0ea;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+
+.input-wrapper:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+.input-icon {
+    width: 43px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 13px 0 0;
+    color: #172033;
+    background: transparent;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.input-wrapper input::placeholder {
+    color: #a1adbd;
+}
+
+.password-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.password-hint {
+    color: #94a3b8;
+    font-size: 10px;
+    margin: -8px 0 0;
+}
+
+
+/* =========================================================
+   MESSAGES
+   ========================================================= */
+
+.form-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 11px 13px;
+    border-radius: 9px;
+    font-size: 12px;
+}
+
+.form-message span {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.form-message p {
+    margin: 2px 0 0;
+    line-height: 1.5;
+}
+
+.error-message {
+    background: #fff5f5;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+.error-message span {
+    background: #fee2e2;
+}
+
+.success-message {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+}
+
+.success-message span {
+    background: #dcfce7;
+}
+
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.register-submit {
+    width: 100%;
+    min-height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 750;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
+    transition: 0.2s ease;
+}
+
+.register-submit:hover:not(:disabled) {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 23px rgba(37, 99, 235, 0.23);
+}
+
+.register-submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.register-submit span:last-child {
+    font-size: 17px;
+}
+
+.loading-spinner {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: register-spin 0.7s linear infinite;
+}
+
+@keyframes register-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 22px;
+    font-size: 12px;
+}
+
+.login-section span {
+    color: #64748b;
+}
+
+.login-section button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 750;
+    cursor: pointer;
+    padding: 0;
+}
+
+.login-section button:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   SECURITY
+   ========================================================= */
+
+.security-note {
+    margin-top: 24px;
+    padding: 13px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid #edf1f5;
+}
+
+.security-note>span {
+    font-size: 16px;
+}
+
+.security-note strong {
+    display: block;
+    color: #475569;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.security-note p {
+    color: #94a3b8;
+    font-size: 9px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.register-footer {
+    border-top: 1px solid #e7ebf2;
+    background: #ffffff;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+.register-footer p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+    .register-container {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+    .register-intro {
+        text-align: center;
+    }
+    .register-intro h1,
+    .intro-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-benefits {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .relocation-illustration {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .register-topbar {
+        height: 70px;
+        padding: 0 18px;
+    }
+    .register-brand-subtitle {
+        display: none;
+    }
+    .register-brand-name {
+        font-size: 17px;
+    }
+    .register-brand-icon {
+        width: 39px;
+        height: 39px;
+    }
+    .topbar-home-btn {
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+    .register-main {
+        padding: 35px 15px 50px;
+    }
+    .register-container {
+        gap: 30px;
+    }
+    .register-intro h1 {
+        font-size: 40px;
+    }
+    .intro-description {
+        font-size: 14px;
+    }
+    .relocation-illustration {
+        height: 160px;
+    }
+    .illustration-circle {
+        width: 150px;
+        height: 150px;
+    }
+    .illustration-house,
+    .illustration-destination {
+        width: 58px;
+        height: 58px;
+        font-size: 27px;
+    }
+    .illustration-truck {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+    .register-card {
+        padding: 25px 20px;
+        border-radius: 17px;
+    }
+    .password-row {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+    .login-section {
+        flex-wrap: wrap;
+    }
+}

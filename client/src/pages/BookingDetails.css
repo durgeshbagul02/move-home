@@ -1,0 +1,1066 @@
+/* =========================================================
+   BOOKING DETAILS PAGE
+
+   Common Sidebar:
+   Sidebar.jsx
+   Width: 280px
+
+========================================================= */
+
+.booking-details-page {
+    min-height: 100vh;
+    background: #f5f8fc;
+    color: #14213d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   MAIN AREA
+
+   Common Sidebar = 280px
+========================================================= */
+
+.bd-main-area {
+    margin-left: 280px;
+    min-height: 100vh;
+    width: calc(100% - 280px);
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.bd-topbar {
+    height: 82px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5eaf1;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bd-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+.bd-back-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dbe4ef;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #172b4d;
+    font-size: 23px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.2s ease;
+}
+
+.bd-back-button:hover {
+    background: #f6f9fd;
+    border-color: #cbd8e8;
+}
+
+.bd-topbar-left h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 800;
+    color: #15284a;
+}
+
+.bd-topbar-left p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #8190a7;
+}
+
+
+/* =========================================================
+   USER AREA
+========================================================= */
+
+.bd-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.bd-notification {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.bd-user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.18);
+}
+
+.bd-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.bd-user-info strong {
+    font-size: 14px;
+    color: #172b4d;
+}
+
+.bd-user-info span {
+    font-size: 12px;
+    color: #8391a7;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.bd-content {
+    padding: 38px 32px 30px;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.bd-page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.bd-page-label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #2563eb;
+}
+
+.bd-page-header h2 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #13264a;
+}
+
+.bd-page-header p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #71819a;
+}
+
+.bd-booking-id {
+    min-width: 205px;
+    padding: 18px 24px;
+    background: #ffffff;
+    border: 1px solid #dce5f0;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(30, 55, 90, 0.04);
+}
+
+.bd-booking-id span {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #8a99ad;
+    margin-bottom: 8px;
+}
+
+.bd-booking-id strong {
+    font-size: 19px;
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   SUCCESS CARD
+========================================================= */
+
+.bd-success-card {
+    min-height: 82px;
+    padding: 17px 20px;
+    margin-bottom: 28px;
+    border: 1px solid #cfe2ff;
+    border-radius: 15px;
+    background: #eef6ff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bd-success-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.bd-success-card h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    color: #172b4d;
+}
+
+.bd-success-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #71819a;
+}
+
+.bd-status-badge {
+    margin-left: auto;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: #d9eaff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TWO COLUMN LAYOUT
+========================================================= */
+
+.bd-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 390px;
+    gap: 24px;
+    align-items: start;
+}
+
+.bd-left {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.bd-right {
+    min-width: 0;
+    position: sticky;
+    top: 24px;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.bd-card {
+    background: #ffffff;
+    border: 1px solid #dce5ef;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(30, 55, 90, 0.035);
+}
+
+.bd-card-header {
+    min-height: 88px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #e8edf3;
+}
+
+.bd-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: #eef5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    flex-shrink: 0;
+}
+
+.bd-card-header h3 {
+    margin: 0;
+    font-size: 21px;
+    color: #162b4e;
+}
+
+.bd-card-header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #8392a8;
+}
+
+.bd-card-body {
+    padding: 24px;
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.bd-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.bd-info-box {
+    min-height: 92px;
+    padding: 19px;
+    border: 1px solid #dce6f1;
+    border-radius: 13px;
+    background: #f9fbfd;
+}
+
+.bd-info-box span {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    color: #70819a;
+}
+
+.bd-info-box strong {
+    display: block;
+    font-size: 16px;
+    color: #172b4d;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   ROUTE
+========================================================= */
+
+.bd-route {
+    padding: 20px;
+    border: 1px solid #cfe2ff;
+    border-radius: 15px;
+    background: #f8fbff;
+}
+
+.bd-route-point {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.bd-route-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf3ff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.bd-route-icon.destination {
+    background: #f1f3f8;
+}
+
+.bd-route-point>div:last-child {
+    min-width: 0;
+}
+
+.bd-route-point span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    color: #71829b;
+}
+
+.bd-route-point strong {
+    display: block;
+    font-size: 14px;
+    color: #162b4e;
+    overflow-wrap: anywhere;
+}
+
+.bd-route-line {
+    height: 25px;
+    width: 2px;
+    background: #bcd6ff;
+    margin: 3px 0 3px 20px;
+}
+
+
+/* =========================================================
+   VEHICLE
+========================================================= */
+
+.bd-vehicle-box {
+    margin: 24px;
+    padding: 20px;
+    border: 1px solid #dce6f1;
+    border-radius: 14px;
+    background: #f9fbfd;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bd-vehicle-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: #eaf3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    flex-shrink: 0;
+}
+
+.bd-vehicle-info {
+    min-width: 0;
+}
+
+.bd-vehicle-info h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #172b4d;
+}
+
+.bd-vehicle-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #7d8da4;
+}
+
+.bd-confirmed-small {
+    margin-left: auto;
+    padding: 8px 12px;
+    border-radius: 18px;
+    background: #e7f1ff;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ITEMS
+========================================================= */
+
+.bd-items-summary {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.bd-summary-box {
+    min-height: 105px;
+    border: 1px solid #dce6f1;
+    border-radius: 13px;
+    background: #f9fbfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bd-summary-box strong {
+    font-size: 27px;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+.bd-summary-box span {
+    font-size: 11px;
+    color: #74849c;
+}
+
+.bd-item-list {
+    margin: 0 24px 24px;
+    border-top: 1px solid #e6ebf2;
+}
+
+.bd-item-row {
+    min-height: 56px;
+    padding: 10px 4px;
+    border-bottom: 1px solid #e9edf3;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 80px 90px;
+    gap: 12px;
+    align-items: center;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.bd-item-name {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.bd-item-name strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #172b4d;
+}
+
+.bd-item-row>span {
+    text-align: right;
+}
+
+.bd-fragile {
+    color: #dc2626 !important;
+    font-weight: 700;
+}
+
+.bd-standard {
+    color: #16a34a !important;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TRACKING CARD
+========================================================= */
+
+.bd-tracking-card {
+    padding: 21px;
+    border: 1px solid #cfe2ff;
+    border-radius: 16px;
+    background: #eef6ff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bd-tracking-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #dcecff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.bd-tracking-card>div:nth-child(2) {
+    min-width: 0;
+}
+
+.bd-tracking-card span {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    color: #2563eb;
+}
+
+.bd-tracking-card h4 {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #172b4d;
+}
+
+.bd-tracking-card p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #71819a;
+}
+
+.bd-tracking-card button {
+    margin-left: auto;
+    min-width: 125px;
+    height: 42px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.2s ease;
+}
+
+.bd-tracking-card button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   PRICE CARD
+========================================================= */
+
+.bd-price-card {
+    background: #ffffff;
+    border: 1px solid #dce5ef;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(30, 55, 90, 0.06);
+}
+
+.bd-price-header {
+    min-height: 185px;
+    padding: 25px;
+    background: #f8fbff;
+    border-bottom: 1px solid #e2e9f2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.bd-price-header>div:first-child {
+    min-width: 0;
+}
+
+.bd-price-header span {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    color: #71819a;
+    margin-bottom: 9px;
+}
+
+.bd-price-header h2 {
+    margin: 0;
+    font-size: 39px;
+    line-height: 1;
+    color: #172b4d;
+    font-weight: 800;
+}
+
+.bd-price-header p {
+    margin: 12px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #7b8ba2;
+}
+
+.bd-money-icon {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #dbe6f3;
+    border-radius: 13px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PRICE BREAKDOWN
+========================================================= */
+
+.bd-price-breakdown {
+    padding: 8px 25px 0;
+}
+
+.bd-price-row {
+    min-height: 88px;
+    padding: 19px 0;
+    border-bottom: 1px solid #e6ebf1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bd-price-row>div {
+    min-width: 0;
+}
+
+.bd-price-row>div strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #41536f;
+}
+
+.bd-price-row>div span {
+    display: block;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #91a0b5;
+    overflow-wrap: anywhere;
+}
+
+.bd-price-row>strong {
+    font-size: 13px;
+    color: #172b4d;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.bd-total-row {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bd-total-row span {
+    font-size: 16px;
+    font-weight: 800;
+    color: #172b4d;
+}
+
+.bd-total-row strong {
+    font-size: 28px;
+    color: #2563eb;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.bd-security {
+    margin: 0 25px 20px;
+    padding: 14px;
+    border: 1px solid #cfe2ff;
+    border-radius: 12px;
+    background: #eef6ff;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bd-security>span {
+    font-size: 17px;
+}
+
+.bd-security p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #647b9a;
+}
+
+
+/* =========================================================
+   TRACK BUTTON
+========================================================= */
+
+.bd-track-button {
+    width: calc(100% - 50px);
+    height: 52px;
+    margin: 0 25px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.bd-track-button:hover {
+    background: #1d4ed8;
+}
+
+.bd-back-page-button {
+    width: calc(100% - 50px);
+    height: 50px;
+    margin: 0 25px 25px;
+    border: 1px solid #dce5ef;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #566781;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.bd-back-page-button:hover {
+    background: #f7f9fc;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.bd-footer {
+    margin-top: 30px;
+    padding: 20px 0 5px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.bd-footer p {
+    margin: 0;
+    font-size: 11px;
+    color: #8a98ad;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.booking-details-loading {
+    min-height: 100vh;
+    background: #f5f8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.booking-details-spinner {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #dbeafe;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: bookingSpin 0.8s linear infinite;
+}
+
+@keyframes bookingSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   Common Sidebar:
+   280px → 230px → 210px
+========================================================= */
+
+@media (max-width: 1250px) {
+    .bd-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .bd-layout {
+        grid-template-columns: minmax(0, 1fr) 350px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .bd-layout {
+        grid-template-columns: 1fr;
+    }
+    .bd-right {
+        position: relative;
+        top: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .bd-main-area {
+        margin-left: 230px;
+        width: calc(100% - 230px);
+    }
+    .bd-topbar {
+        padding: 0 18px;
+    }
+    .bd-user-info {
+        display: none;
+    }
+    .bd-page-header {
+        flex-direction: column;
+    }
+    .bd-booking-id {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .bd-page-header h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .bd-main-area {
+        margin-left: 210px;
+        width: calc(100% - 210px);
+    }
+    .bd-topbar {
+        height: auto;
+        min-height: 75px;
+        padding: 12px 15px;
+    }
+    .bd-topbar-left {
+        gap: 10px;
+    }
+    .bd-back-button {
+        width: 44px;
+        height: 44px;
+        font-size: 21px;
+    }
+    .bd-topbar-left h1 {
+        font-size: 18px;
+    }
+    .bd-topbar-left p {
+        display: none;
+    }
+    .bd-user-info {
+        display: none;
+    }
+    .bd-notification {
+        font-size: 18px;
+        margin-right: 0;
+    }
+    .bd-user-avatar {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+    .bd-content {
+        padding: 24px 15px;
+    }
+    .bd-page-header {
+        margin-bottom: 22px;
+    }
+    .bd-page-header h2 {
+        font-size: 28px;
+    }
+    .bd-page-header p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .bd-success-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .bd-status-badge {
+        margin-left: 58px;
+    }
+    .bd-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .bd-card-header {
+        padding: 18px;
+    }
+    .bd-card-body {
+        padding: 18px;
+    }
+    .bd-items-summary {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+    .bd-item-list {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .bd-item-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .bd-item-row>span {
+        text-align: left;
+    }
+    .bd-tracking-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .bd-tracking-card button {
+        margin-left: 0;
+        width: 100%;
+    }
+    .bd-vehicle-box {
+        margin: 18px;
+        padding: 16px;
+    }
+    .bd-confirmed-small {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+    .bd-price-header {
+        padding: 22px;
+    }
+    .bd-price-header h2 {
+        font-size: 34px;
+    }
+    .bd-price-breakdown {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .bd-total-row {
+        padding: 22px;
+    }
+    .bd-security {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .bd-track-button {
+        width: calc(100% - 44px);
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .bd-back-page-button {
+        width: calc(100% - 44px);
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .bd-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
